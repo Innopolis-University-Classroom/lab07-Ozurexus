@@ -11,10 +11,10 @@ class Calculator {
             num1 = n1;
             num2 = n2;
         }
-        int add(T num1,T num2) { return num1+num2;}
-        int subtract(T num1,T num2) {return num1-num2;}
-        int multiply(T num1,T num2) { return num1*num2;}
-        int divide(T num1,T num2) { return num1/num2;}
+        int add() { return num1+num2;}
+        int subtract() {return num1-num2;}
+        int multiply() { return num1*num2;}
+        int divide() { return num1/num2;}
     };
 
 
