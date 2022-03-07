@@ -3,7 +3,7 @@
 // also fill out the body
 
 template<typename T>
- public class Calculator {
+class Calculator {
     private:
         int num1, num2;
     public:
