@@ -5,7 +5,7 @@
 template<typename T>
 class Calculator {
     private:
-        int num1, num2;
+        T num1, num2;
     public:
         Calculator(T n1, T n2) {
             num1 = n1;
