@@ -3,21 +3,24 @@
 // also fill out the body
 
 public class Calculator {
-private:
-    int num1, num2;
 
-public:
-    Calculator(int n1, int n2) {
-        num1 = n1;
-        num2 = n2;
-    }
-
-    int add() { return 0; /*your code here*/ }
-    int subtract() { /*your code here*/ }
-    int multiply() { /*your code here*/ }
-    int divide() { /*your code here*/ }
-};
-
+    private:
+        int num1, num2;  
+    public:
+        template <typename T>
+        Calculator(T n1, T n2) {
+            num1 = n1;
+            num2 = n2;
+        }
+        template <typename T>
+        int add(T num1,T num2) { return num1+num2;}
+        template <typename T>
+        int subtract(T num1,T num2) {return num1-num2;}
+        template <typename T>
+        int multiply(T num1,T num2) { return num1*num2;}
+        template <typename T>
+        int divide(T num1,T num2) { return num1/num2;}
+    };
 
 
 
